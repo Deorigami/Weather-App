@@ -1,0 +1,42 @@
+.mainBody {
+  /* background-color: black; */
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.cityInfo h1 {
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+h5 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.tempInfo h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: 50px;
+  height: 150px;
+  border-bottom: 2px dashed #fff;
+  margin-bottom: 25px;
+}
+
+.tempInfo:nth-child(3) {
+  color: #fff;
+  font-size: larger;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
