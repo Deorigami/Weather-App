@@ -11,7 +11,7 @@ function App() {
   const [weather, setWeather] = useState("");
   const [formActive, setFormActive] = useState(true);
   const [humMenu, setHumMenu] = useState(false);
-  const [forecast, setForcast] = useState({});
+
   const [status, setStatus] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -20,8 +20,6 @@ function App() {
     if (input === "") {
       return;
     }
-
-    const forecast = `api.openweathermap.org/data/2.5/forecast/daily?q=London&mode=xml&units=metric&cnt=7&appid=${apikey}`;
 
     const weather = `https://api.openweathermap.org/data/2.5/weather?q=${country}&units=metric&appid=${apikey}`;
 
@@ -34,6 +32,8 @@ function App() {
       })
       .then((r) => setWeather(r))
       .catch((err) => alert(err));
+
+    setFormActive(true);
 
     setInput("");
 
